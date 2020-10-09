@@ -14,6 +14,6 @@ public class CsvLoaderTest {
     public void loadFromResource() throws Exception {
         CsvLoader csvLoader = new CsvLoader();
         Map<Integer, Employee> employees = csvLoader.loadFromResource("/employee_data.csv", true);
-        assertEquals(3, employees.size());
+        assertEquals(6, employees.size());
     }
 }
